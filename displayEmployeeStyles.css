@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background:url(Images/back2.jpg);
+    background-size: 110%;
+    background-position: -80px 0px;   
+    color: #fff;
+}
+.table1{
+    background-color: rgba(0,0,0,0.2);
+    width:100%;
+    font-size: 30px;
+    font-weight:500;
+    border-radius: 10px;
+    margin-top:50px;
+    margin-bottom:25px;
+ }
+ table,th,td{
+	border:1.5px solid;
+	width:10px;
+	border-collapse:collapse;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #0a0909;
+}
+tr:hover{
+	background-color: #D6EEEE;
+}
+
+
+
+.table2{
+    background-color: rgba(0,0,0,0.2);
+    width:40%;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-bottom:25px;
+    border-color: black;
+ }
+ 
+
+.horizonatal{
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 50px;
+    border-color: #121011;
+ 
+}

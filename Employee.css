@@ -1,0 +1,70 @@
+
+*{ /*this is written to make it applay to whole html*/  
+    margin:0;
+    padding:0;
+    font-family:'poppins','sans-serif';
+    box-sizing:border-box;
+}
+body{/*To applay background color */
+background:url(Images/back.jpg);
+    background-size: 110%;
+    background-position: -80px 0px;   
+    color: black;
+}
+#header{/*for our start and main condainer we added backgrounde-size as cover and the position as center */
+    height: 35rem;
+    width: 100%;
+   
+    background-size: cover;
+    background-position:center;
+}
+.container{/*for nav bar we provide the content padding  */
+    padding: 10px 10%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+#education{
+    padding: 30px 0;
+   
+}
+h2{
+	color:#fff;
+}
+.education-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.education-list div{
+    background-color: rgba(5, 5, 5, 0.5);
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.education-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.education-list div h2{
+    font-size: 30px;
+    font-family: 500;
+    margin-bottom: 15px;
+}
+.education-list div a{
+    text-decoration: none;/* if wedon't want any line or other elements around our text */
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.education-list div:hover{
+    background: rgba(5, 5, 5, 0.8);
+    transform: translateY(-10px);
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration</title>
+  <link rel="stylesheet" href="addEmployeeStyles.css" type="text/css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="register">
+      <h2>Add employee</h2>
+      <form id="register" action="addEmployee" method="post" autocomplete="off">
+        <label>Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter name" required>
+        <br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" id="name" placeholder="Enter age" required>
+        <br><br>
+
+        <label>Gender:</label><br>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" id="male" value="Male" >
+        &nbsp;
+        <span id="male">Male</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" id="female" value="Female" >
+        &nbsp;
+        <span id="female">Female</span><br><br>
+
+        <label>Job:</label>
+        <select id="job" name="job">
+          <option value="Housekeeping">Housekeeping</option>
+          <option value="Room-Service">Room Service</option>
+         <option value="Waiter/Waitress">Waiter/Waitress</option>
+          <option value="Manager">Manager</option>
+          <option value="Accountant">Accountant</option>
+          <option value="Chef">Chef</option>
+        </select><br><br> 
+        
+        <label >Salary:</label><br>
+        <input type="number" name="salary" id="name" placeholder="Enter salary" required><br><br>
+
+        <label>Phone No:</label><br>
+        <input type="tel" id="name" class="phone" name="phNo" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+       
+        <label>Aadhar No:</label><br>
+        <input type="tel" name="aadharNo" id="name" placeholder="xxxx-xxxx-xxxx"  required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" id="name" placeholder="Enter email" required><br><br>
+
+      <a href="displayEmployee.jsp"> <input type="submit" value="submit" name="submit" id="submit" required></a>
+
+      </form>
+
+    </div><!--end register-->
+<a href="Employee.jsp"><button type="button" id="submit">Back</button></a>
+  </div><!--end main-->
+
+
+</body>
+
+</html>

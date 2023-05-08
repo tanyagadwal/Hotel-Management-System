@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{ /*this is written to make it applay to whole html*/  
+    margin:0;
+    padding:0;
+    font-family:'poppins','sans-serif';
+    box-sizing:border-box;
+}
+body{/*To applay background color */
+    background-color:#96D4D4;
+    color: #fff;
+}
+#header{/*for our start and main condainer we added backgrounde-size as cover and the position as center */
+    height: 35rem;
+    width: 100%;
+    background-color: #ff4c68;
+    background-size: cover;
+    background-position:center;
+}
+.container{/*for nav bar we provide the content padding  */
+    padding:0;
+}
+#volunteer{
+    padding: 5px 0;  
+    margin-left:0;
+    height: 50rem;
+   color: black;
+}
+.volunteer-list{
+     display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.volenteer{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ 
+}
+.volenteer img{
+        width: 300px;
+        height:450px;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+        
+}
+.layer{
+    color: black;
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(167, 161, 161, 0.6),#ff4c68);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow:hidden  ;
+    display: flex;
+    padding:0 40px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;  
+    text-align: center;
+    transition: height 0.5s;
+    
+}
+.layer h3{
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+.layer a{
+    margin-top: 20px;
+    color:rgba(0,0,0,0.4);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    
+}
+.volenteer:hover img{
+    transform:scale(1.1);
+}
+
+.volenteer:hover .layer{
+    height: 100%;
+}
+.content p{
+    text-align: left;
+    font-size: 17px;
+}
+.content p span{
+    font-size: 19px;
+    color: #ff4c68;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*#ef8172*/
